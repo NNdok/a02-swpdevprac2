@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const name = document.getElementById("name").value.trim();
         const phone = document.getElementById("phone").value.trim();
         const numTravelers = document.getElementById("num-travelers").value;
-        const joinLand = document.getElementById("join-land").checked;
-
+        const agreement = document.getElementById("agreement").checked;
+        
         // ตรวจสอบค่าที่ต้องไม่เป็นค่าว่าง
         if (name === "") {
             alert("กรุณากรอกชื่อผู้ติดต่อ");
@@ -26,12 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // ตรวจสอบหากต้องการซื้อบัตรโดยสารเครื่องบินเอง
-        if (joinLand) {
-            const confirmJoinLand = confirm("ต้องการซื้อบัตรโดยสารเครื่องบินเองใช่หรือไม่?");
-            if (confirmJoinLand) {
-                alert("คุณเลือกซื้อบัตรโดยสารเครื่องบินเอง");
-            }
+        // ตรวจสอบการยอมรับข้อตกลง
+        if (!agreement) {
+            alert("กรุณายอมรับข้อตกลง");
+            return;
         }
 
         alert("แบบฟอร์มถูกส่งเรียบร้อย!");
