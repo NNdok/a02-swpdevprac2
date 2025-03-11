@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แพคเกจทัวร์ท่องเที่ยว</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #f1f1f1;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header {
+            background: #1d1f1d;
+            color: #ffffff;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+            border-bottom: 5px solid #00b894;
+        }
+        .student-info {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 14px;
+            color: #b2bec3;
+        }
+        .header h1 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .tour-package {
+            background: #2d2f2f;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        .tour-package:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        img {
+            width: 80%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #e8e8e8;
+            font-size: 24px;
+            margin-top: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 16px;
+            color: #d0d0d0;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+        .booking-link {
+            display: block;
+            text-align: center;
+            margin: 40px 0;
+            padding: 15px 30px;
+            background: #00b894;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s ease;
+        }
+        .booking-link:hover {
+            background: #00cec9;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>แพคเกจทัวร์ท่องเที่ยว</h1>
+        <div class="student-info">
+            <p>รหัสนิสิต: 6733145721</p>
+            <p>ชื่อ: ปัณณธร วิศาลสวัสดิ์</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tour-package">
+            <h2>แพคเกจ 1: เที่ยวภูเขา</h2>
+            <img src="https://png.pngtree.com/background/20211216/original/pngtree-xiaguang-morning-rapeseed-mountain-no-photography-picture-with-picture-picture-image_1539818.jpg" alt="เที่ยวภูเขา">
+            <p>สัมผัสบรรยากาศเย็นสบายและวิวธรรมชาติที่งดงาม</p>
+        </div>
+
+        <div class="tour-package">
+            <h2>แพคเกจ 2: เที่ยวทะเล</h2>
+            <img src="h15.jpg" alt="เที่ยวทะเล">
+            <p>เพลิดเพลินกับชายหาดสีขาวและน้ำทะเลใส</p>
+        </div>
+
+        <div class="tour-package">
+            <h2>แพคเกจ 3: ทัวร์เมืองเก่า</h2>
+            <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1949,h_1300/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/snk4xpphswidhdknvlct/%E0%B8%97%E0%B8%B1%E0%B8%A7%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%8A%E0%B8%A1%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%B0%E0%B8%B0%E0%B8%B0%E0%B8%89%E0%B8%9A%E0%B8%99%E0%B8%A1-%E0%B9%89%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%A3%E0%B8%8F%E0%B8%AD%f9%81vme__sead_jkmnkjd.jpg" alt="ทัวร์เมืองเก่า">
+            <p>เรียนรู้ประวัติศาสตร์และวัฒนธรรมของเมืองเก่า</p>
+        </div>
+
+        <a href="booking.html" class="booking-link">จองทัวร์ที่นี่</a>
+    </div>
+
+</body>
+</html>

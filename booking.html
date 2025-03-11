@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จองทัวร์</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            margin-top: 30px;
+        }
+        h2 {
+            text-align: center;
+            color: #00b894;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #d0d0d0;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+        input[type="number"], input[type="tel"], select {
+            font-size: 16px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #00b894;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.3s ease;
+        }
+        button:hover {
+            background: #218838;
+            transform: translateY(-5px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>แบบฟอร์มจองทัวร์</h2>
+
+        <label for="tour-type">ประเภทกลุ่มทัวร์:</label>
+        <select id="tour-type" name="tour-type" required>
+            <option value="">-- กรุณาเลือกประเภท --</option>
+            <option value="ทัวร์ทะเล">ทัวร์ทะเล</option>
+            <option value="ทัวร์เมืองเก่า">ทัวร์เมืองเก่า</option>
+            <option value="ทัวร์ภูเขา">ทัวร์ภูเขา</option>
+        </select>
+
+        <label for="num-travelers">จำนวนผู้ร่วมเดินทาง:</label>
+        <input type="number" id="num-travelers" name="num-travelers" min="1" required>
+
+        <label for="name">ชื่อ:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">เบอร์โทร:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="กรอกเบอร์โทร 10 หลัก" required>
+
+        <div class="checkbox-container">
+            <label for="agreement">ยอมรับข้อตกลง</label>
+            <input type="checkbox" id="agreement" name="agreement" required>
+        </div>
+
+        <button type="submit">จองทัวร์</button>
+
+    </div>
+    <script src="booking.js"></script>
+
+</body>
+</html>
